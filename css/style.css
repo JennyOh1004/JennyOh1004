@@ -137,7 +137,7 @@ table {
 
 :root {
   --body-fonts: "Open Sans", sans-serif;
-  --text-fonts: "Playfair Display", serif;
+  --text-fonts: "Poppins", sans-serif;
   --logo-fonts: "Cormorant Garamond", serif;
   --primary-color: #fff;
   --secondary-color: #000;
@@ -154,6 +154,10 @@ body {
   background: #fff;
 }
 
+.logo {
+  font-size: 20px;
+}
+
 nav {
   min-height: 10vh;
   width: 90%;
@@ -162,10 +166,39 @@ nav {
   justify-content: space-between;
   align-items: center;
   padding: 20px 0px;
+  z-index: 2;
 }
 
-.logo {
-  font-size: 20px;
+nav ul {
+  display: flex;
+  justify-content: row;
+  padding-right: 20px;
+}
+
+nav li {
+  display: flex;
+  padding-right: 30px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #000;
+  cursor: pointer;
+  text-shadow: var(--shadow);
+  letter-spacing: 2px;
+}
+
+.nav a:hover {
+  text-decoration: none;
+  color: var(--point-color);
+  cursor: pointer;
+  transition: linear all 0.3s;
+  text-shadow: var(--shadow);
+}
+
+a {
+  text-decoration: none;
+  z-index: 5;
 }
 
 .page {
@@ -175,10 +208,10 @@ nav {
 }
 
 .hero {
-  height: 500px;
-  align-self: center;
+  /* height: 500px; */
+  /* align-self: center;
   justify-self: center;
-  display: flex;
+  display: flex; */
 }
 
 .hero img {
@@ -187,19 +220,19 @@ nav {
   width: 100%;
   top: 10vh;
   right: 0;
-  z-index: 5;
+  z-index: 1;
   object-fit: cover;
   mix-blend-mode: lighten;
   animation: reveal 1s ease forwards;
   opacity: 0;
 }
 
-/* .hero video {
+.hero video {
   position: absolute;
   right: 0;
   top: 10vh;
-  height: 80%;
-  width: 80%;
+  height: 100%;
+  width: 100%;
   object-fit: cover;
   animation: reveal 1s ease 0.5s forwards;
   opacity: 0;
@@ -212,16 +245,18 @@ nav {
   to {
     opacity: 1;
   }
-} */
+}
 
 .details {
   grid-column: 2/3;
   align-self: end;
+  z-index: 2;
 }
 
 .details h1 {
   font-size: 64px;
   font-family: "Poppins", sans-serif;
+  letter-spacing: 2px;
 }
 
 .details h2 {
@@ -232,9 +267,11 @@ nav {
 .details p {
   font-size: 24px;
   padding: 20px 0px 50px 0px;
+  letter-spacing: 2px;
 }
 
 .pages {
+  z-index: 2;
   position: absolute;
   right: 5%;
   top: 50%;
@@ -279,6 +316,7 @@ nav {
   height: 50vh;
   width: 100%;
   position: relative;
+  background-image: linear-gradient(to right, #ffecd2 0%, #fcb69f 100%);
 }
 
 /* .banner img {
@@ -290,13 +328,14 @@ nav {
 
 .about h1 {
   position: absolute;
-  top: 70%;
+  top: 55%;
   left: 50%;
   transform: translate(-50%, -70%);
   color: #fff;
-  font-size: 42px;
+  font-size: 72px;
   text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
   text-align: center;
+  letter-spacing: 3px;
 }
 
 .story {
@@ -336,12 +375,18 @@ nav {
 }
 
 .icons {
-  position: absolute;
+  /* position: absolute;
   top: 120%;
   right: 10%;
   text-align: center;
   font-size: 25px;
-  padding: 20px;
+  padding: 20px; */
+
+  position: absolute;
+  right: 5%;
+  top: 135%;
+  font-size: 25px;
+  /* transition: translateY(-50%); */
 }
 
 .icons a {
@@ -395,11 +440,9 @@ nav {
   }
 
   .icons {
-    display: flex;
-    margin: auto;
     top: 220%;
-    text-align: center;
-    width: 50%;
+    right: 35%;
+    position: absolute;
   }
 }
 
@@ -418,5 +461,11 @@ nav {
 
   .details h2 {
     font-size: 28px;
+  }
+
+  .icons {
+    top: 230%;
+    right: 30%;
+    position: absolute;
   }
 }
