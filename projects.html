@@ -8,12 +8,31 @@
     <link rel="stylesheet" href="../src/css/style.css" />
     <!-- icons link  -->
     <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
+    <!-- CSS and JS file -->
+    <link
+      rel="stylesheet"
+      href="https://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap-theme.min.css"
+    />
+    <script
+      type="text/javascript"
+      src="https://code.jquery.com/jquery.min.js"
+    ></script>
+    <script src="https://netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
+    <style>
+      nav {
+        margin-left: auto;
+      }
+    </style>
     <title>Jenny's World</title>
   </head>
   <body>
     <header>
       <nav class="nav" id="nav">
-        <h3 class="logo"><a href="./index.html">Jenny Oh</a></h3>
+        <h3 class="logo" id="logo"><a href="./index.html">Jenny Oh</a></h3>
         <ul>
           <li><a href="about.html">About</a></li>
           <li><a href="projects.html">Projects</a></li>
@@ -33,33 +52,89 @@
       <div class="work">
         <div class="project-description">
           <h3>My Works</h3>
+        </div>
+      </div>
 
-          <!-- metif korea project -->
-          <h4>Metif Korea</h4>
-          <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore
-            voluptatem, nihil qui ut libero minus ducimus impedit saepe minima
-            placeat quidem eius nostrum vitae tempora natus in. Odit, natus
-            illum.
-          </p>
-
-          <div class="project-image">
-            <img src="./assets/Metif1.svg" alt="Project Image" />
+      <div class="carousel-bg">
+        <!-- Quote Image -->
+        <div>
+          <img
+            src="https://i.imgur.com/gZ5HY0U.png"
+            class="img-responsive quote-image"
+          />
+        </div>
+        <!-- Carousel Start below -->
+        <div
+          id="carousel1"
+          class="carousel slide testimonial-style"
+          data-ride="carousel"
+        >
+          <!-- Indicators -->
+          <ol class="carousel-indicators">
+            <li data-target="#carousel1" data-slide-to="0" class="active"></li>
+            <li data-target="#carousel1" data-slide-to="1"></li>
+            <li data-target="#carousel1" data-slide-to="2"></li>
+          </ol>
+          <!-- Wrapper for slides -->
+          <div class="carousel-inner">
+            <div class="item active">
+              <img
+                class="carousel-img"
+                src="../src/assets/Metif1.svg"
+                alt="Metif Korea Image"
+                class="img-responsive quote-image"
+              />
+              <div class="carousel-caption testimonial-caption-style">
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Vitae semper quis lectus nulla at volutpat diam.
+                </p>
+                <p class="testimonial-authors">Person 1</p>
+              </div>
+            </div>
+            <div class="item">
+              <img
+                class="carousel-img"
+                src="../src/assets/flixter1.svg"
+                alt="Flixter Yoga Image"
+                class="img-responsive quote-image"
+              />
+              <div class="carousel-caption testimonial-caption-style">
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Vitae semper quis lectus nulla at volutpat diam.
+                </p>
+                <p class="testimonial-authors">Person 2</p>
+              </div>
+            </div>
+            <div class="item">
+              <img
+                class="carousel-img"
+                src="../src/assets/Metif1.svg"
+                alt="Metif Korea Image"
+                class="img-responsive quote-image"
+              />
+              <div class="carousel-caption testimonial-caption-style">
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Vitae semper quis lectus nulla at volutpat diam.
+                </p>
+                <p class="testimonial-authors">Person 3</p>
+              </div>
+            </div>
           </div>
 
-          <!-- flixter yoga project -->
+          <!-- Controls -->
 
-          <h4>Flixter Yoga web application</h4>
-          <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore
-            voluptatem, nihil qui ut libero minus ducimus impedit saepe minima
-            placeat quidem eius nostrum vitae tempora natus in. Odit, natus
-            illum.
-          </p>
-
-          <div class="project-image">
-            <img src="./assets/flixter1.svg" alt="Project Image" />
-          </div>
+          <a class="left carousel-control" href="#carousel1" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left"></span>
+          </a>
+          <a class="right carousel-control" href="#carousel1" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right"></span>
+          </a>
         </div>
       </div>
     </main>
