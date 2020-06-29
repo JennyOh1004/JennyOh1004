@@ -359,6 +359,7 @@ a {
   width: 90%;
   margin: auto;
   padding: 80px 0px;
+  font-family: var(--body-fonts);
 }
 
 .story-description {
@@ -399,7 +400,7 @@ a {
 
   position: absolute;
   right: 5%;
-  top: 135%;
+  top: 145%;
   font-size: 25px;
   /* transition: translateY(-50%); */
 }
@@ -427,7 +428,7 @@ a {
 }
 
 .project-description {
-  width: 50%;
+  width: 45%;
 }
 
 .project-description h3 {
@@ -451,6 +452,13 @@ a {
 
 .project img {
   margin-top: 10%;
+  width: 45%;
+}
+
+project-image img {
+  display: flex;
+  width: 40%;
+  margin: auto;
 }
 
 /* contact section  */
@@ -555,7 +563,15 @@ textarea {
 }
 
 .contact-icons {
-  padding-left: 10%;
+  padding-right: 15%;
+  padding-top: 20px;
+  font-size: 24px;
+}
+
+.contact-icons a {
+  color: #000;
+  text-decoration: none;
+  padding: 20px;
 }
 
 /* Responsive web design */
