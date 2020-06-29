@@ -583,11 +583,11 @@ textarea {
   margin-bottom: 40px;
 }
 
-.carousel-img img {
+.item img {
   margin: auto;
-  margin-top: 100%;
-  padding-top: 200px;
-  width: 50%;
+  margin-top: 20px;
+  padding-top: 100px;
+  width: 70%;
 }
 
 /* quote */
@@ -595,7 +595,7 @@ textarea {
   margin-left: auto;
   margin-right: auto;
   margin-bottom: auto;
-  padding-top: 60px;
+  padding-top: 10px;
   width: 80px;
 }
 /* text-style */
@@ -615,7 +615,7 @@ textarea {
   font-size: 20px;
   color: #354052;
   line-height: 30px;
-  margin-top: 40px;
+  margin-top: 10px;
 }
 /* carousel-height-control */
 .testimonial-style .carousel-inner > .item {
