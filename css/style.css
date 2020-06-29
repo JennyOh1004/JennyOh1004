@@ -386,23 +386,19 @@ a {
 }
 
 .profile img {
-  margin-top: 23%;
+  margin-top: 100px;
   box-shadow: var(--shadow);
+  display: flex;
 }
 
 .icons {
-  /* position: absolute;
-  top: 120%;
-  right: 10%;
-  text-align: center;
+  display: flex;
+  /* position: absolute; */
   font-size: 25px;
-  padding: 20px; */
-
-  position: absolute;
-  right: 5%;
-  top: 145%;
-  font-size: 25px;
-  /* transition: translateY(-50%); */
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
 }
 
 .icons a {
@@ -585,7 +581,6 @@ textarea {
 
 .item img {
   margin: auto;
-  margin-top: 20px;
   padding-top: 100px;
   width: 70%;
 }
@@ -595,27 +590,28 @@ textarea {
   margin-left: auto;
   margin-right: auto;
   margin-bottom: auto;
-  padding-top: 10px;
+  padding-bottom: 20px;
   width: 80px;
 }
 /* text-style */
 .testimonial-style .testimonial-caption-style {
-  font-family: "Roboto";
+  font-family: var(--text-fonts);
   font-weight: 400;
   font-size: 24px;
   color: #354052;
   line-height: 30px;
-  bottom: 100%;
   text-shadow: none;
   top: 0%;
+  letter-spacing: 2px;
 }
 .testimonial-style .testimonial-authors {
-  font-family: "Roboto";
+  font-family: var(--text-fonts);
   font-weight: 700;
-  font-size: 20px;
+  font-size: 30px;
   color: #354052;
   line-height: 30px;
-  margin-top: 10px;
+  margin-bottom: 30px;
+  letter-spacing: 3px;
 }
 /* carousel-height-control */
 .testimonial-style .carousel-inner > .item {
@@ -692,13 +688,21 @@ textarea {
   }
 
   .profile {
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    position: relative;
   }
 
   .icons {
-    top: 220%;
-    right: 35%;
+    display: flex;
     position: absolute;
+    font-size: 25px;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    margin-top: 300px;
   }
 
   .work {
@@ -743,9 +747,21 @@ textarea {
     font-size: 28px;
   }
 
+  .profile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    position: relative;
+  }
+
   .icons {
-    top: 230%;
-    right: 30%;
+    display: flex;
     position: absolute;
+    font-size: 25px;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    margin-top: 300px;
   }
 }
