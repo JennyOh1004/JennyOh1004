@@ -4,95 +4,175 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <!-- css link  -->
+    <!-- meta tag -->
+    <meta charset="UTF-8" />
+    <meta
+      name="description"
+      content="Jenny Oh Web Developer Personal Portfolio"
+    />
+    <meta
+      name="keywords"
+      content="HTML,CSS,Javascript Developer,UI Developer, Web Developer"
+    />
+    <meta name="author" content="Jenny Oh" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <!-- favicon icon link -->
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+    <!-- stylesheet CSS file link  -->
     <link rel="stylesheet" href="../src/css/style.css" />
-    <!-- icons link  -->
-    <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
-
     <title>Jenny's World</title>
   </head>
   <body>
-    <header class="nav-header">
-      <nav class="nav" id="nav">
-        <h3 class="logo" id="logo"><a href="./index.html">Jenny Oh</a></h3>
-        <ul class="nav">
-          <li><a href="about.html">About</a></li>
-          <li><a href="projects.html">Projects</a></li>
-          <li><a href="contact.html">Contact</a></li>
-          <li><a href="resume.html">Resume</a></li>
-        </ul>
-      </nav>
-      <!-- <img src="" alt="navigation" />Menu -->
-    </header>
-    <main>
-      <div class="project-banner">
-        <div class="project">
-          <h1>PROJECTS.</h1>
-        </div>
-      </div>
+    <div class="portofolio">
+      <header>
+        <nav class="nav" id="nav">
+          <h3 class="logo">
+            <a href="./index.html"
+              ><img
+                class="logo-img"
+                src="../src/assets/jenny-logo.png"
+                alt="Jenny Logo"
+            /></a>
+          </h3>
+          <ul>
+            <li><a href="about.html">About</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="resume.html">Resume</a></li>
+          </ul>
+        </nav>
+        <!-- <img src="" alt="navigation" />Menu -->
 
-      <div class="work">
-        <div class="project-description">
-          <h3>My Works</h3>
-        </div>
-      </div>
-
-      <div class="card-container">
-        <div class="card-wrapper">
-          <div class="card-carousel">
-            <h1>
-              Projects
-            </h1>
-            <div id="slide01" class="slide01">
-              <h1>
-                Metif Korea
-              </h1>
-              <p>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                Architecto fuga placeat ratione, suscipit porro quia voluptas.
-                Et eligendi commodi, culpa in fuga nihil, repellendus similique
-                accusantium est necessitatibus, doloremque id!
-              </p>
-              <img src="../src/assets/Metif1.svg" alt="Metif Korea Image" />
-            </div>
-
-            <div id="slide02" class="slide02">
-              <h1>
-                Flixter Yoga
-              </h1>
-              <p>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                Architecto fuga placeat ratione, suscipit porro quia voluptas.
-                Et eligendi commodi, culpa in fuga nihil, repellendus similique
-                accusantium est necessitatibus, doloremque id!
-              </p>
-              <img src="../src/assets/flixter1.svg" alt="Flixter Yoga Image" />
-            </div>
-
-            <div id="slide03" class="slide03">
-              Test slide # 3
-            </div>
-            <div id="slide04" class="slide04">
-              Test slide # 1 (duplicate)
+        <main>
+          <div class="project-banner">
+            <div class="project">
+              <h1>PROJECTS.</h1>
             </div>
           </div>
 
-          <div class="card-nav">
-            <ul class="card-nav__list">
-              <li>
-                <a href="#slide01"><span class="bullet01"></span></a>
-              </li>
-              <li>
-                <a href="#slide02"><span class="bullet02"></span></a>
-              </li>
-              <li>
-                <a href="#slide03"><span class="bullet03"></span></a>
-              </li>
-            </ul>
-            <!-- /.card-nav__list -->
+          <div class="work">
+            <div class="project-description">
+              <h3>My Works.</h3>
+            </div>
           </div>
-        </div>
-      </div>
-    </main>
+          <!-- first project -->
+          <section class="page metif">
+            <div class="project-details">
+              <h2>Metif Korea</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Aliquam, unde eaque eligendi necessitatibus illum impedit
+                voluptate architecto asperiores velit ratione inventore
+                exercitationem. Porro quis mollitia repudiandae blanditiis
+                dolorum animi aliquid?
+              </p>
+            </div>
+            <div class="project-image">
+              <img src="./assets/Metif1.svg" alt="Metif Korea Image" />
+            </div>
+          </section>
+
+          <!-- second project -->
+
+          <section class="page flixter">
+            <div class="project-details">
+              <h2>Flixter Yoga</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Aliquam, unde eaque eligendi necessitatibus illum impedit
+                voluptate architecto asperiores velit ratione inventore
+                exercitationem. Porro quis mollitia repudiandae blanditiis
+                dolorum animi aliquid?
+              </p>
+            </div>
+            <div class="project-image">
+              <img src="./assets/flixter1.svg" alt="Flixter Yoga Image" />
+            </div>
+          </section>
+
+          <!-- third project -->
+
+          <section class="page yelp">
+            <div class="project-details">
+              <h2>Yelp Clone</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Aliquam, unde eaque eligendi necessitatibus illum impedit
+                voluptate architecto asperiores velit ratione inventore
+                exercitationem. Porro quis mollitia repudiandae blanditiis
+                dolorum animi aliquid?
+              </p>
+            </div>
+            <div class="project-image">
+              <img src="./assets/flixter1.svg" alt="Yelp clone Image" />
+            </div>
+          </section>
+
+          <!-- forth project -->
+
+          <section class="page colorme">
+            <div class="project-details">
+              <h2>Color Me Rad</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Aliquam, unde eaque eligendi necessitatibus illum impedit
+                voluptate architecto asperiores velit ratione inventore
+                exercitationem. Porro quis mollitia repudiandae blanditiis
+                dolorum animi aliquid?
+              </p>
+            </div>
+            <div class="project-image">
+              <img src="./assets/flixter1.svg" alt="Color Me Rad Image" />
+            </div>
+          </section>
+
+          <!-- menu bar -->
+          <div class="pages">
+            <div class="page-1">
+              <h3>01</h3>
+              <svg
+                class="slide active"
+                width="12"
+                height="12"
+                viewBox="0 0 12 12"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <circle cx="6" cy="6" r="6" fill="black" />
+              </svg>
+            </div>
+
+            <div class="page-2">
+              <h3>02</h3>
+              <svg
+                class="slide"
+                width="12"
+                height="12"
+                viewBox="0 0 12 12"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <circle cx="6" cy="6" r="6" fill="black" />
+              </svg>
+            </div>
+
+            <div class="page-3">
+              <h3>03</h3>
+              <svg
+                class="slide"
+                width="12"
+                height="12"
+                viewBox="0 0 12 12"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <circle cx="6" cy="6" r="6" fill="black" />
+              </svg>
+            </div>
+          </div>
+        </main>
+      </header>
+    </div>
   </body>
 </html>
