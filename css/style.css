@@ -146,6 +146,7 @@ table {
   --primary-color: #fff;
   --secondary-color: #000;
   --point-color: #fcb69f;
+  --third-color: #ece2df;
   --shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
 }
 
@@ -485,7 +486,7 @@ a {
 
 .project-image img {
   margin-top: 10%;
-  width: 180%;
+  width: 200%;
 }
 
 .project-details {
@@ -495,14 +496,38 @@ a {
 }
 
 .project-details h2 {
-  font-size: 36px;
+  font-size: 32px;
   letter-spacing: 3px;
+  margin-bottom: 12px;
 }
 
 .project-details p {
   font-size: 20px;
+  letter-spacing: 1px;
 }
 
+.project-details button {
+  display: flex;
+  align-self: center;
+  background: #000;
+  color: #fff;
+  width: 150px;
+  height: 60px;
+  border: none;
+  font-size: 1rem;
+  padding: 20px;
+  margin: auto;
+  margin-top: 30px;
+  letter-spacing: 1.5px;
+  cursor: pointer;
+}
+
+.project-details button:hover {
+  background: #fff;
+  color: #000;
+  transition: linear all 0.3s;
+  border: solid 0.1px #000;
+}
 /* project-image img {
   display: flex;
   width: 70%;
@@ -696,12 +721,26 @@ textarea {
   .work {
     flex-direction: column;
   }
+
+  .metif {
+    grid-template-columns: 5% 1fr 5%;
+    grid-template-rows: 2fr 1fr;
+    align-items: center;
+  }
+
+  .project-details {
+    grid-row: 2/3;
+    grid-column: 2/3;
+    text-align: center;
+  }
   .project-description {
     width: 100%;
   }
 
   .project-image img {
-    width: 100%;
+    width: 850px;
+    grid-column: 2/3;
+    height: auto;
   }
 
   .contact {
@@ -721,6 +760,8 @@ textarea {
 @media (max-width: 768px) {
   .page {
     grid-template-rows: 1fr 1fr;
+    align-items: center;
+    text-align: center;
   }
 
   .hero img {
@@ -751,5 +792,23 @@ textarea {
     justify-content: center;
     align-items: center;
     margin-top: 300px;
+  }
+
+  .project-details {
+    grid-template-rows: 1fr 1fr;
+    grid-row: 2/3;
+    grid-column: 2/3;
+    text-align: center;
+    align-items: center;
+    width: 100%;
+  }
+  .project-description {
+    width: 100%;
+  }
+
+  .project-image img {
+    grid-template-rows: 1fr 1fr;
+    width: 550px;
+    height: auto;
   }
 }
