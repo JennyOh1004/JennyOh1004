@@ -244,38 +244,18 @@ a {
   transform: translate(0%, 0%);
 }
 
-/* .hero img {
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  top: 10vh;
-  right: 0;
-  z-index: 1;
-  object-fit: cover;
-  mix-blend-mode: lighten;
-  animation: reveal 1s ease forwards;
-  opacity: 0;
-} */
+/* scroll effect */
 
-/* .hero video {
-  position: absolute;
-  right: 0;
-  top: 10vh;
-  height: 100%;
-  width: 100%;
-  object-fit: cover;
-  animation: reveal 1s ease 0.5s forwards;
+.intro_text {
   opacity: 0;
-} */
+  transform: translateY(20px);
+  transition: 0.4s all ease-in-out;
+}
 
-/* @keyframes reveal {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-} */
+.intro_appear {
+  opacity: 1;
+  transform: translateY(0px);
+}
 
 .details {
   grid-column: 2/3;
@@ -489,6 +469,12 @@ a {
   width: 200%;
 }
 
+.project-image img:hover {
+  transition: linear 0.3s all;
+  opacity: 0.6;
+  cursor: pointer;
+}
+
 .project-details {
   grid-column: 2/3;
   align-self: center;
@@ -549,6 +535,57 @@ a {
   transition: 1s;
   transform: scale(1.1);
 } */
+
+/* Metif Korea section */
+
+.metif-container {
+  min-height: 90vh;
+  display: grid;
+  align-self: center;
+  text-align: center;
+}
+
+.metifkorea-project {
+  display: flex;
+  margin: auto;
+  height: 70vh;
+}
+
+.metifkorea-project h2 {
+  font-size: 72px;
+  margin-top: 50%;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+}
+
+.metifkorea-project p {
+  color: #000;
+  margin: auto;
+  font-size: 2rem;
+  font-family: var(--body-fonts);
+  letter-spacing: 2px;
+  padding: 50px;
+  text-align: center;
+  line-height: 60px;
+}
+
+.metifkorea-project-text p {
+  font-size: 24px;
+  padding: 150px;
+  margin-bottom: 200px;
+  line-height: 40px;
+  font-family: var(--body-fonts);
+  letter-spacing: 2px;
+}
+
+.metifkorea-project2 img {
+  margin: auto;
+  width: 30%;
+}
+
+.metif-mockup {
+  width: 100%;
+}
 
 /* contact section  */
 
