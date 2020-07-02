@@ -147,6 +147,11 @@ table {
   --secondary-color: #000;
   --point-color: #fcb69f;
   --third-color: #ece2df;
+  --peach-color: #e7aa99;
+  --green-color: #193a21;
+  --green-color2: #1b2b2a;
+  --pink-color: #f3ebe9;
+  --pink-color2: #ecd0ce;
   --shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
 }
 
@@ -326,15 +331,8 @@ a {
   height: 50vh;
   width: 100%;
   position: relative;
-  /* background-image: linear-gradient(to right, #ffecd2 0%, #fff5f5 100%); */
-  /* background-image: linear-gradient(-60deg, #f3e7e9 50%, #fdfbfb 50%); */
-  background-image: radial-gradient(73% 147%, #eadfdf 59%, #ece2df 100%),
-    radial-gradient(
-      91% 146%,
-      rgba(255, 255, 255, 0.5) 47%,
-      rgba(0, 0, 0, 0.5) 100%
-    );
-  background-blend-mode: screen;
+  background-image: linear-gradient(to right, #ffecd2 0%, #fff5f5 100%);
+  background-image: url(../assets/banner1.svg);
 }
 
 .project-banner {
@@ -342,6 +340,7 @@ a {
   width: 100%;
   position: relative;
   background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
+  background-image: url(../assets/banner2.svg);
 }
 
 .contact-banner {
