@@ -599,7 +599,7 @@ a {
 }
 
 .metifkorea-project-text p {
-  font-size: 30px;
+  font-size: 26px;
   padding: 150px;
   margin-bottom: 200px;
   line-height: 40px;
@@ -622,6 +622,11 @@ a {
 
 .mockup-bg {
   background: #fcb69f;
+}
+
+.flixter-project img {
+  margin: auto;
+  width: 100%;
 }
 
 /* contact section  */
