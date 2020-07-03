@@ -565,7 +565,7 @@ a {
 .metifkorea-project {
   display: flex;
   margin: auto;
-  height: 70vh;
+  height: 50vh;
 }
 
 .metifkorea-project h2 {
@@ -602,6 +602,10 @@ a {
 
 .metif-mockup {
   width: 100%;
+}
+
+.mockup-bg {
+  background: #fcb69f;
 }
 
 /* contact section  */
