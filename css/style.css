@@ -612,6 +612,10 @@ a {
   width: 30%;
 }
 
+.metif-container a {
+  z-index: 0;
+}
+
 .metif-mockup {
   width: 100%;
 }
