@@ -180,7 +180,7 @@ nav {
   justify-content: space-between;
   align-items: center;
   padding: 5px;
-  z-index: 2;
+  z-index: 5;
   position: fixed;
 }
 
@@ -294,7 +294,7 @@ a {
   grid-column: 2/3;
   align-self: end;
   z-index: 2;
-  margin-bottom: 10%;
+  margin-bottom: 5%;
 }
 
 .details h1 {
