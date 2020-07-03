@@ -145,13 +145,8 @@ table {
   --logo-fonts: "Cormorant Garamond", serif;
   --primary-color: #fff;
   --secondary-color: #000;
-  --point-color: #fcb69f;
   --third-color: #ece2df;
-  --peach-color: #e7aa99;
-  --green-color: #193a21;
-  --green-color2: #1b2b2a;
-  --pink-color: #f3ebe9;
-  --pink-color2: #ecd0ce;
+  --point-color: #fcb69f;
   --shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
 }
 
@@ -161,52 +156,72 @@ body {
 
 .portofolio {
   color: #000;
-  background: #fff;
+  /* background: radial-gradient(
+    circle,
+    rgba(250, 232, 239, 1) 0%,
+    rgba(255, 255, 255, 1) 74%
+  ); */
+  background: linear-gradient(
+    circle,
+    rgba(252, 182, 159, 1) 0%,
+    rgba(255, 255, 255, 1) 60%
+  );
 }
 
 .logo-img {
-  width: 50px;
+  width: 70px;
   margin-top: 20px;
 }
 
 nav {
-  min-height: 10vh !important;
-  width: 90% !important;
-  margin: auto !important;
-  display: flex !important;
-  justify-content: space-between !important;
-  align-items: center !important;
-  padding: 20px 0px !important;
-  z-index: 2 !important;
+  min-height: 10vh;
+  width: 90%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0px;
+  z-index: 2;
 }
 
 nav ul {
   display: flex;
   justify-content: row;
-  padding-right: 20px;
+  padding-left: 20px;
 }
 
 nav li {
   display: flex;
-  padding-right: 35px;
+  padding-right: 30px;
 }
 
 nav a {
   text-decoration: none;
   color: #000;
   cursor: pointer;
-  text-shadow: var(--shadow);
   letter-spacing: 2.5px;
   font-family: var(--body-fonts);
+  font-size: 18px;
 }
 
-.nav a:hover {
+nav a:hover:after {
+  position: absolute;
+  content: "";
+  width: 50px;
+  height: 1px;
+  border-bottom: 3px solid var(--point-color);
+  margin: 5px 0px;
+  text-align: center;
+  display: block;
+  transition: linear all 0.3s;
+}
+
+/* .nav a:hover {
   text-decoration: none;
   color: var(--point-color);
   cursor: pointer;
   transition: linear all 0.3s;
-  text-shadow: var(--shadow);
-}
+} */
 
 a {
   text-decoration: none;
@@ -225,6 +240,7 @@ a {
   align-self: center;
   justify-content: center;
   display: flex;
+  padding-top: 40px;
 }
 
 .hero img {
@@ -266,23 +282,27 @@ a {
   grid-column: 2/3;
   align-self: end;
   z-index: 2;
+  margin-bottom: 20%;
 }
 
 .details h1 {
   font-size: 56px;
   font-family: "Poppins", sans-serif;
   letter-spacing: 2px;
+  color: #000;
 }
 
 .details h2 {
   font-size: 36px;
   padding: 20px 0px;
+  color: #000;
 }
 
 .details p {
   font-size: 24px;
   padding: 20px 0px 50px 0px;
   letter-spacing: 2px;
+  color: #000;
 }
 
 .pages {
@@ -332,22 +352,27 @@ a {
   width: 100%;
   position: relative;
   background-image: linear-gradient(to right, #ffecd2 0%, #fff5f5 100%);
-  background-image: url(../assets/banner1.svg);
 }
 
 .project-banner {
   height: 50vh;
   width: 100%;
   position: relative;
-  background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
-  background-image: url(../assets/banner2.svg);
+  background-image: linear-gradient(135deg, #fdfcfb 0%, #e2d1c3 100%);
 }
 
 .contact-banner {
   height: 50vh;
   width: 100%;
   position: relative;
-  background-image: linear-gradient(to right, #deecdd 0%, #fff 100%);
+  background-image: linear-gradient(to right, #ffecd2 0%, #fff5f5 100%);
+}
+
+.resume-banner {
+  height: 50vh;
+  width: 100%;
+  position: relative;
+  background-image: linear-gradient(135deg, #fdfcfb 0%, #e2d1c3 100%);
 }
 
 /* .banner img {
@@ -365,9 +390,10 @@ a {
   transform: translate(-50%, -70%);
   color: #fff;
   font-size: 72px;
-  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+  /* text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5); */
   text-align: center;
-  letter-spacing: 4px;
+  letter-spacing: 5px;
+  color: #fff;
 }
 
 .story {
@@ -377,6 +403,7 @@ a {
   margin: auto;
   padding: 80px 0px;
   font-family: var(--body-fonts);
+  color: var(--green-color2);
 }
 
 .story-description {
@@ -480,25 +507,36 @@ a {
   z-index: 2;
 }
 
+/* project left */
+.project-details-left {
+  grid-column: 2/3;
+  align-self: center;
+  z-index: 2;
+  justify-items: end;
+  background: red;
+}
+
 .project-details h2 {
   font-size: 32px;
   letter-spacing: 3px;
   margin-bottom: 12px;
+  color: var(--green-color);
 }
 
 .project-details p {
   font-size: 20px;
   letter-spacing: 1px;
+  color: var(--green-color);
 }
 
 .project-details button {
   display: flex;
   align-self: center;
-  background: #000;
-  color: #fff;
+  background: #fff;
+  color: #000;
   width: 150px;
   height: 60px;
-  border: none;
+  border: solid 0.1px #000;
   font-size: 1rem;
   padding: 20px;
   margin: auto;
@@ -508,32 +546,12 @@ a {
 }
 
 .project-details button:hover {
-  background: #fff;
-  color: #000;
+  background: var(--point-color);
+  color: #fff;
   transition: linear all 0.3s;
-  border: solid 0.1px #000;
+  border: solid 0.1px var(--point-color);
+  opacity: 0.8;
 }
-/* project-image img {
-  display: flex;
-  width: 70%;
-  margin: auto;
-} */
-
-/* #project-slider {
-  transform: translateY(20%);
-}
-
-.slick-slide {
-  width: 50vw;
-  height: 50vh;
-  background: black;
-  margin: 100px;
-}
-
-.slick-current {
-  transition: 1s;
-  transform: scale(1.1);
-} */
 
 /* Metif Korea section */
 
@@ -697,6 +715,62 @@ textarea {
   color: #000;
   text-decoration: none;
   padding: 20px;
+}
+
+/* resume section  */
+
+.resume-container {
+  display: flex;
+  justify-content: center;
+}
+
+.resume img {
+  position: relative;
+  display: flex;
+  margin: auto;
+  width: 60%;
+  margin-top: 10%;
+  margin-bottom: 10%;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+
+.resume a {
+  text-decoration: none;
+  color: #f1f3f5;
+  font-size: 1rem;
+}
+
+.resume a:hover {
+  text-decoration: none;
+  color: #000;
+  transition: linear all 0.3s;
+}
+
+.download {
+  position: absolute;
+  right: 0px;
+  top: 150px;
+  margin-left: auto;
+  width: 150px;
+  background: var(--point-color);
+  outline: none;
+  border: solid 0.1px #fcb69f;
+  letter-spacing: 2.5px;
+  font-size: 1rem;
+  border-radius: 2px;
+  cursor: pointer;
+  padding: 15px;
+  margin-right: 50px;
+  line-height: 20px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+
+.download:hover {
+  color: #000;
+  background: #fff;
+  transition: linear all 0.3s;
+  border: solid 0.1px #000;
+  cursor: pointer;
 }
 
 /* ------------------------------ */
