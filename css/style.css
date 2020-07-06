@@ -600,10 +600,11 @@ a {
 }
 
 .metifkorea-project-text p {
-  font-size: 26px;
-  padding: 150px;
+  font-size: 30px;
+  padding: 100px;
+  margin-top: 200px;
   margin-bottom: 200px;
-  line-height: 40px;
+  line-height: 50px;
   font-family: var(--body-fonts);
   letter-spacing: 2px;
 }
