@@ -30,3 +30,16 @@ function animateOnScroll(target, triggerPosition, reversible = false) {
 window.addEventListener("scroll", () => {
   animateOnScroll(".intro_text", 0.8, true);
 });
+
+//hamburger
+
+const hamburger = document.querySelector(".hamburger");
+const navLinks = document.querySelector(".nav-links");
+const links = document.querySelectorAll(".nav-links li");
+
+hamburger.addEventListener("click", () => {
+  navLinks.classList.toggle("open");
+  links.forEach((link) => {
+    link.classList.toggle("fade");
+  });
+});
