@@ -43,3 +43,12 @@ hamburger.addEventListener("click", () => {
     link.classList.toggle("fade");
   });
 });
+
+//appear h1
+
+const details = document.querySelector(".details h1");
+
+window.addEventListener("load", () => {
+  // console.log("load!!!");
+  details.classList.add("appear");
+});
