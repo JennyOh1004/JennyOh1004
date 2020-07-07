@@ -299,11 +299,19 @@ a {
   margin-bottom: 5%;
 }
 
+.details h1.appear {
+  opacity: 1;
+  transform: translateY(0px);
+}
+
 .details h1 {
   font-size: 56px;
   font-family: "Poppins", sans-serif;
   letter-spacing: 2px;
   color: #000;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: 0.4s all ease-in-out;
 }
 
 .details h2 {
@@ -473,22 +481,31 @@ a {
 
 /* project section  */
 
-.project,
+.project {
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  margin: auto;
+  padding-bottom: 50px;
+}
+
 .work {
   display: flex;
   justify-content: space-between;
   width: 90%;
   margin: auto;
-  padding: 50px 0px;
+  padding: 30px 0px;
 }
 
 .project-description {
-  width: 45%;
+  grid-column: 2/3;
+  align-self: center;
+  z-index: 2;
+  width: 50%;
 }
 
 .project-description h3 {
   font-size: 36px;
-  padding-bottom: 30px;
   letter-spacing: 2px;
   text-shadow: var(--shadow);
 }
@@ -834,4 +851,11 @@ textarea {
   transition: linear all 0.3s;
   border: solid 0.1px #000;
   cursor: pointer;
+}
+
+.project--image img {
+  margin-top: 100px;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
 }

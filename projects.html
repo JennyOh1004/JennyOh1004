@@ -19,49 +19,61 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <!-- favicon icon link -->
     <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+
+    <!-- icons link  -->
+    <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
     <!-- stylesheet CSS file link  -->
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/style-second.css" />
     <title>Jenny's World</title>
   </head>
   <body>
-    <div class="portofolio">
-      <header>
-        <div class="logo">
-          <a href="index.html"
-            ><img class="logo-img" src="assets/Jenny_logo.png" alt="Jenny Logo"
+    <header>
+      <div class="logo">
+        <a href="index.html"
+          ><img class="logo-img" src="assets/Jenny_logo.png" alt="Jenny Logo"
+        /></a>
+      </div>
+      <nav class="nav" id="nav">
+        <div class="hamburger">
+          <div class="line"></div>
+          <div class="line"></div>
+          <div class="line"></div>
+        </div>
+        <ul class="nav-links">
+          <li><a href="about.html">About</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="resume.html">Resume</a></li>
+        </ul>
+      </nav>
+      <!-- <img src="" alt="navigation" />Menu -->
+    </header>
+    <main>
+      <div class="about-banner">
+        <div class="about">
+          <h1>PROJECTS</h1>
+        </div>
+      </div>
+
+      <div class="work">
+        <div class="project-description">
+          <h3>My Works.</h3>
+        </div>
+      </div>
+
+      <!-- first project -->
+      <div class="project">
+        <div class="project--image">
+          <a href="https://metifkorea.shop/" target="_blank"
+            ><img
+              class="project-img"
+              src="assets/Metif1.svg"
+              alt="Metif Korea Image"
           /></a>
         </div>
-        <nav class="nav" id="nav">
-          <div class="hamburger">
-            <div class="line"></div>
-            <div class="line"></div>
-            <div class="line"></div>
-          </div>
-          <ul class="nav-links">
-            <li><a href="about.html">About</a></li>
-            <li><a href="projects.html">Projects</a></li>
-            <li><a href="contact.html">Contact</a></li>
-            <li><a href="resume.html">Resume</a></li>
-          </ul>
-        </nav>
-      </header>
-      <!-- <img src="" alt="navigation" />Menu -->
 
-      <main>
-        <div class="project-banner">
-          <div class="project">
-            <h1>PROJECTS.</h1>
-          </div>
-        </div>
-
-        <div class="work">
-          <div class="project-description">
-            <h3>My Works.</h3>
-          </div>
-        </div>
-        <!-- first project -->
-        <section class="page metif">
+        <div class="project-description">
           <div class="project-details">
             <h2>Metif Korea 01</h2>
             <p>
@@ -72,16 +84,18 @@
               ><button class="more-details">More Details</button></a
             >
           </div>
-          <div class="project-image">
-            <a href="https://metifkorea.shop/" target="_blank"
-              ><img src="assets/Metif1.svg" alt="Metif Korea Image"
-            /></a>
-          </div>
-        </section>
+        </div>
+      </div>
 
-        <!-- second project -->
+      <!-- second project -->
+      <div class="project">
+        <div class="project--image">
+          <a href="https://flixter-jenny-oh.herokuapp.com/" target="_blank"
+            ><img src="assets/flixter1.svg" alt="Flixter Yoga Image"
+          /></a>
+        </div>
 
-        <section class="page flixter">
+        <div class="project-description">
           <div class="project-details">
             <h2>Flixter Yoga 02</h2>
             <p>
@@ -89,96 +103,55 @@
               payment capabilites, user role management and complex User
               Interfaces.
             </p>
-            <a href="flixterYoga.html"
+            <a href="metifKorea.html"
               ><button class="more-details">More Details</button></a
             >
           </div>
-          <div class="project-image">
-            <a href="https://flixter-jenny-oh.herokuapp.com/" target="_blank"
-              ><img src="assets/flixter1.svg" alt="Flixter Yoga Image"
-            /></a>
-          </div>
-        </section>
+        </div>
+      </div>
 
-        <!-- third project -->
+      <!-- third project -->
 
-        <section class="page yelp">
+      <div class="project">
+        <div class="project--image">
+          <a href="https://nomster-jenny-oh.herokuapp.com/" target="_blank"
+            ><img src="assets/flixter1.svg" alt="Yelp clone Image"
+          /></a>
+        </div>
+
+        <div class="project-description">
           <div class="project-details">
             <h2>Yelp Clone 03</h2>
             <p>
               Developed a Yelp clone that integrates with the Google Map API.
             </p>
-            <button class="more-details">More Details</button>
+            <a href="metifKorea.html"
+              ><button class="more-details">More Details</button></a
+            >
           </div>
-          <div class="project-image">
-            <a href="https://nomster-jenny-oh.herokuapp.com/" target="_blank"
-              ><img src="assets/flixter1.svg" alt="Yelp clone Image"
-            /></a>
-          </div>
-        </section>
+        </div>
+      </div>
 
-        <!-- forth project -->
+      <!-- forth project -->
+      <div class="project">
+        <div class="project--image">
+          <img src="assets/flixter1.svg" alt="Color Me Rad Image" />
+        </div>
 
-        <section class="page colorme">
+        <div class="project-description">
           <div class="project-details">
             <h2>Color Me Rad 04</h2>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam,
-              unde eaque eligendi necessitatibus.
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vel
+              deleniti iste voluptates.
             </p>
-            <button class="more-details">More Details</button>
+            <a href="metifKorea.html"
+              ><button class="more-details">More Details</button></a
+            >
           </div>
-          <div class="project-image">
-            <img src="assets/flixter1.svg" alt="Color Me Rad Image" />
-          </div>
-        </section>
-
-        <!-- menu bar -->
-        <!-- <div class="pages">
-            <div class="page-1">
-              <h3>01</h3>
-              <svg
-                class="slide active"
-                width="12"
-                height="12"
-                viewBox="0 0 12 12"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <circle cx="6" cy="6" r="6" fill="black" />
-              </svg>
-            </div>
-
-            <div class="page-2">
-              <h3>02</h3>
-              <svg
-                class="slide"
-                width="12"
-                height="12"
-                viewBox="0 0 12 12"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <circle cx="6" cy="6" r="6" fill="black" />
-              </svg>
-            </div>
-
-            <div class="page-3">
-              <h3>03</h3>
-              <svg
-                class="slide"
-                width="12"
-                height="12"
-                viewBox="0 0 12 12"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <circle cx="6" cy="6" r="6" fill="black" />
-              </svg>
-            </div>
-          </div> -->
-      </main>
-    </div>
+        </div>
+      </div>
+    </main>
     <script src="js/index.js"></script>
   </body>
 </html>
