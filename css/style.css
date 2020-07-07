@@ -172,10 +172,18 @@ body {
   width: 50px;
   position: absolute;
   margin: 25px;
+  z-index: 5;
+}
+
+header {
+  height: 10vh;
 }
 
 nav {
   height: 10vh;
+  position: fixed;
+  z-index: 4;
+  width: 100%;
 }
 
 .nav-links {
@@ -449,6 +457,7 @@ a {
   justify-content: center;
   align-items: center;
   margin-top: 10px;
+  z-index: 3;
 }
 
 .icons a {
