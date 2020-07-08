@@ -826,14 +826,18 @@ textarea {
   justify-content: center;
 } */
 
+/* .resume {
+  position: relative;
+} */
+
 .resume img {
   position: relative;
   display: flex;
   margin: auto;
-  width: 70%;
+  width: 80%;
   margin-top: 10%;
   margin-bottom: 10%;
-  padding: 50px;
+  padding: 20px;
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
 }
 
@@ -851,9 +855,8 @@ textarea {
 
 .download {
   position: absolute;
-  right: 0px;
-  top: 50%;
-  margin-left: auto;
+  right: 0;
+  top: 40%;
   width: 150px;
   background: var(--point-color);
   outline: none;
