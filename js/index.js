@@ -19,7 +19,7 @@ function animateOnScroll(target, triggerPosition, reversible = false) {
   let targetEl = document.querySelectorAll(target);
   targetEl.forEach((el) => {
     let targetElTop = el.getBoundingClientRect().top;
-    let windowHeight = window.innerHeight / 1;
+    let windowHeight = window.innerHeight / 1.2;
     if (targetElTop <= windowHeight * triggerPosition) {
       el.classList.add("intro_appear");
     } else if (targetElTop >= windowHeight && reversible) {

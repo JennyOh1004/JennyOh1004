@@ -455,6 +455,7 @@ a {
   margin-top: 100px;
   box-shadow: var(--shadow);
   display: flex;
+  width: 100%;
 }
 
 .icons {
@@ -614,33 +615,36 @@ a {
 }
 
 .metifkorea-project h2 {
-  font-size: 72px;
-  margin-top: 30%;
-  letter-spacing: 2.5px;
+  font-size: 65px;
+  margin-top: 50%;
+  letter-spacing: 3px;
   text-transform: uppercase;
 }
-
+/* 
 .metifkorea-project p {
   color: #000;
   margin: auto;
-  font-size: 30px;
+  font-size: 28px;
   font-family: var(--body-fonts);
   letter-spacing: 2px;
-  padding: 50px;
+  padding: 80px;
   text-align: center;
   line-height: 60px;
-}
+} */
 
 .metifkorea-project-text p {
-  font-size: 30px;
+  font-size: 28px;
   padding: 100px;
-  margin-top: 200px;
-  margin-bottom: 200px;
+  margin-top: 60px;
+  margin-bottom: 60px;
   line-height: 50px;
   font-family: var(--body-fonts);
   letter-spacing: 2px;
 }
 
+.project-box {
+  margin-bottom: 150px;
+}
 .metifkorea-project2 img {
   margin: auto;
   width: 30%;
@@ -652,6 +656,7 @@ a {
 
 .metif-mockup {
   width: 100%;
+  position: relative;
 }
 
 .mockup-bg {
@@ -660,9 +665,27 @@ a {
   margin-bottom: 50px;
 }
 
+.flixter-project {
+  background: #ffebd8;
+}
 .flixter-project img {
   margin: auto;
-  width: 100%;
+  width: 70%;
+}
+
+.flower-img {
+  top: 300px;
+  left: 0;
+  position: absolute;
+  width: 550px;
+}
+
+.flower-img2 {
+  top: 100px;
+  right: 0;
+  position: absolute;
+  width: 400px;
+  transform: rotate(180deg);
 }
 
 /* contact section  */
@@ -746,7 +769,7 @@ textarea {
 }
 
 .submit {
-  width: 30%;
+  width: 40%;
   height: 8vh;
   color: #fff;
   background: #000;
@@ -858,4 +881,18 @@ textarea {
   display: flex;
   width: 100%;
   justify-content: space-between;
+}
+
+.metif-image {
+  display: flex;
+  margin: auto;
+  margin-top: 100px;
+}
+
+.metif-image img {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+  align-items: center;
 }
