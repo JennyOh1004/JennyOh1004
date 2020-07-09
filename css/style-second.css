@@ -266,6 +266,28 @@
   .metif-image {
     margin-top: 0px;
   }
+
+  .about-banner,
+  .project-banner,
+  .contact-banner,
+  .resume-banner {
+    width: 100%;
+    height: 20vh;
+    margin-top: 10%;
+  }
+
+  .about,
+  .project,
+  .contact h1 {
+    font-size: 55px;
+  }
+  .resume h1 {
+    font-size: 55px;
+  }
+
+  .logo-img {
+    margin: 10px;
+  }
 }
 
 @media only screen and (max-width: 414px) {
