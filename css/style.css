@@ -182,7 +182,7 @@ header {
 nav {
   height: 10vh;
   position: fixed;
-  z-index: 4;
+  z-index: 5;
   width: 100%;
 }
 
@@ -221,7 +221,7 @@ nav {
 /* nav scrolled effect */
 
 .scrolled {
-  background-color: #fff;
+  background-color: red;
   transition: 0.3s;
 }
 
@@ -590,6 +590,21 @@ a {
   opacity: 0.8;
 }
 
+.color-project--image img {
+  width: 40%;
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+}
+
+.color-project--image {
+  margin-top: 50px;
+}
+
+.yelp-image {
+  width: 50%;
+}
+
 /* Metif Korea section */
 
 .metif,
@@ -657,6 +672,10 @@ a {
 .metif-mockup {
   width: 100%;
   position: relative;
+}
+
+.yelp-mockup img {
+  width: 100%;
 }
 
 .mockup-bg {

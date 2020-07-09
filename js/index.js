@@ -46,7 +46,7 @@ hamburger.addEventListener("click", () => {
 
 //appear h1
 
-const details = document.querySelector(".details h1");
+let details = document.querySelector(".details h1");
 
 window.addEventListener("load", () => {
   // console.log("load!!!");
