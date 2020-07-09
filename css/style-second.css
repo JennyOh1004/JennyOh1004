@@ -238,18 +238,33 @@
   }
 
   .flower-img {
-    top: 190px;
+    top: 160px;
     left: 0;
     position: absolute;
     width: 150px;
   }
 
   .flower-img2 {
-    top: 10px;
+    top: 5px;
     right: 0;
     position: absolute;
     width: 150px;
     transform: rotate(180deg);
+  }
+
+  .metifkorea-project h2 {
+    margin-top: 20%;
+    font-size: 40px;
+  }
+  .metifkorea-project-text p {
+    font-size: 18px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    padding: 15px;
+  }
+
+  .metif-image {
+    margin-top: 0px;
   }
 }
 
