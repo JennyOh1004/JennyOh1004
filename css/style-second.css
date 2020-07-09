@@ -284,9 +284,11 @@
   .project,
   .contact h1 {
     font-size: 55px;
+    margin: 5px;
   }
   .resume h1 {
     font-size: 55px;
+    margin: 5px;
   }
 
   .logo-img {
