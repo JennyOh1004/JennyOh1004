@@ -172,6 +172,10 @@
     grid-column: 2/3; */
   }
 
+  .project--image img {
+    margin-top: 10px;
+  }
+
   .nav-links {
     position: fixed;
     background: var(--point-color);
