@@ -688,7 +688,8 @@ a {
 }
 
 .flixter-project {
-  background: #ffebd8;
+  /* background: #ffebd8; */
+  background: #ffffff;
 }
 .flixter-project img {
   margin: auto;
