@@ -907,7 +907,7 @@ textarea {
 }
 
 .project--image img {
-  margin-top: 100px;
+  margin-top: 40px;
   display: flex;
   width: 100%;
   justify-content: space-between;
