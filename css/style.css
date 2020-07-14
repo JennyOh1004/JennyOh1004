@@ -373,28 +373,28 @@ a {
 }
 
 .about-banner {
-  height: 30vh;
+  height: 20vh;
   width: 100%;
   position: relative;
   background-image: linear-gradient(to right, #ffecd2 0%, #fff5f5 100%);
 }
 
 .project-banner {
-  height: 30vh;
+  height: 20vh;
   width: 100%;
   position: relative;
   background-image: linear-gradient(135deg, #fdfcfb 0%, #e2d1c3 100%);
 }
 
 .contact-banner {
-  height: 30vh;
+  height: 20vh;
   width: 100%;
   position: relative;
   background-image: linear-gradient(to right, #ffecd2 0%, #fff5f5 100%);
 }
 
 .resume-banner {
-  height: 30vh;
+  height: 20vh;
   width: 100%;
   position: relative;
   background-image: linear-gradient(135deg, #fdfcfb 0%, #e2d1c3 100%);
