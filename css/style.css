@@ -224,7 +224,7 @@ nav {
 /* nav scrolled effect */
 
 .scrolled {
-  background-color: red;
+  background-color: #fff;
   transition: 0.3s;
 }
 
